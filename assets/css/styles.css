@@ -443,13 +443,17 @@ body {
 }
 
 .products__card {
-  position: relative;
-  height: 132px;
-  background-color: var(--container-color);
-  padding: .75rem;
-  border-radius: .5rem;
-  display: grid;
+  background-color: white; /* Set the card background to white */
+  padding: 20px;
+  border-radius: 10px; /* Optional: adds rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a slight shadow */
+  transition: transform 0.3s ease-in-out; /* Optional: adds hover effect */
 }
+
+.products__card:hover {
+  transform: translateY(-10px); /* Hover effect */
+}
+
 
 .products__img {
   width: 80px;
@@ -457,7 +461,7 @@ body {
   inset: 0;
   margin-right: auto;
   margin-left: auto;
-  top: -3rem;
+  top: -5rem;
 }
 
 .products__content {
@@ -466,6 +470,7 @@ body {
 
 .products__title, .products__price {
   font-size: var(--small-font-size);
+  color: #121212;
 }
 
 .products__price {
@@ -474,6 +479,7 @@ body {
 
 .products__button {
   position: absolute;
+  color: #b59d00;
   right: .5rem;
   bottom: .5rem;
   padding: .5rem;
