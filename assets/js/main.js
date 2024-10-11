@@ -73,6 +73,13 @@ const sr = ScrollReveal({
     // reset: true
 })
 
+const themeToggle = document.getElementById('theme-toggle');
+
+themeToggle.addEventListener('change', () => {
+    document.body.classList.toggle('dark-mode');
+});
+
+
 sr.reveal(`.home__header, .section__title`,{delay: 600})
 sr.reveal(`.home__footer`,{delay: 700})
 sr.reveal(`.home__img`,{delay: 900, origin: 'top'})
