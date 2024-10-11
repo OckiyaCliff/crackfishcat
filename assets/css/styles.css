@@ -74,6 +74,21 @@ body {
   color: var(--text-color);
 }
 
+/* Ensuring visibility in light mode */
+/* body.light-mode .specs__title, 
+body.light-mode .discount__title, 
+body.light-mode .discount__description {
+    color: #000; /* Set the color to black for better visibility in light mode */
+/* } */ */
+
+/* Optional: You can also adjust background for better contrast */
+/* body.light-mode .specs__section, 
+body.light-mode .discount__section {
+    background-color: #fff;
+    color: #000;
+} */
+
+
 h1, h2, h3 {
   color: var(--title-color);
 }
@@ -161,6 +176,7 @@ img {
   font-size: 1.2rem;
   color: var(--white-color);
   cursor: pointer;
+  display: block;
 }
 
 @media screen and (max-width: 767px) {
@@ -173,6 +189,12 @@ img {
     padding: 4rem 0 3rem;
     transition: .4s;
   }
+  .nav__toggle {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
 }
 
 .nav__list {
@@ -237,6 +259,7 @@ body.dark-mode {
   --text-color: #f1f1f1;
 }
 
+
 body {
   background-color: var(--background-color);
   color: var(--text-color);
@@ -282,7 +305,7 @@ body {
   top: -4rem;
   left: 1rem;
   line-height: 6rem;
-  font-size: var(--biggest-font-size);
+  font-size: var(--bigger-font-size);
   background: var(--text-gradient);
   color: transparent;
   -webkit-background-clip: text;
@@ -418,10 +441,12 @@ body {
 .discount__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-75);
+  color: antiquewhite;
 }
 
 .discount__description {
   margin-bottom: var(--mb-1);
+  color: antiquewhite;
 }
 
 .discount__img {
